@@ -1,0 +1,36 @@
+<h2 class="mb-4">Shopping Cart</h2>
+
+<div
+  class="card mb-3 p-3 shadow-sm"
+  *ngFor="let item of cartItems; let i = index"
+>
+
+  <div class="row align-items-center">
+
+    <div class="col-md-2">
+      <img
+        [src]="item.image"
+        class="img-fluid rounded"
+      >
+    </div>
+
+    <div class="col-md-7">
+      <h5>{{ item.name }}</h5>
+
+      <p class="text-muted">
+        ₹ {{ item.price }}
+      </p>
+    </div>
+
+    <div class="col-md-3 text-end">
+      <button
+        class="btn btn-danger"
+        (click)="removeItem(i)"
+      >
+        Remove
+      </button>
+    </div>
+
+  </div>
+
+</div>

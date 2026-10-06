@@ -1,0 +1,381 @@
+<!-- HERO SECTION -->
+<section class="hero-section d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-lg-6 text-white">
+        <span class="badge bg-warning text-dark px-3 py-2 mb-3">
+          New Collection 2026
+        </span>
+
+        <h1 class="display-3 fw-bold mb-4">
+          Upgrade Your Shopping Experience
+        </h1>
+
+        <p class="lead mb-4">
+          Shop electronics, fashion, furniture, beauty products,
+          groceries, books and more at amazing prices.
+        </p>
+
+        <div class="d-flex gap-3 flex-wrap">
+          <a routerLink="/products" class="btn btn-warning btn-lg px-4">
+            Shop Now
+          </a>
+
+          <a routerLink="/cart" class="btn btn-outline-light btn-lg px-4">
+            View Cart
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-6 text-center mt-5 mt-lg-0">
+        <img
+          src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+          class="hero-image img-fluid"
+          alt="Hero Product"
+        >
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="container py-5">
+
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="fw-bold">Trending Products</h2>
+  </div>
+
+  <div class="row g-4">
+
+    <!-- Product 1 -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card product-card h-100 shadow-sm">
+
+        <img
+          src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+          class="card-img-top"
+        >
+
+        <div class="card-body">
+
+          <span class="badge bg-primary mb-2">
+            Electronics
+          </span>
+
+          <h5 class="fw-bold">Smartphone Pro</h5>
+
+          <p class="text-muted">
+            Latest flagship smartphone.
+          </p>
+
+          <div class="d-flex justify-content-between align-items-center">
+
+            <span class="price">₹65,000</span>
+
+            <button
+              class="btn btn-warning btn-sm"
+              (click)="addToCart({
+                name: 'Smartphone Pro',
+                price: 65000,
+                image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9'
+              })"
+            >
+              Buy Now
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card product-card h-100 shadow-sm">
+
+        <img
+          src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+          class="card-img-top"
+        >
+
+        <div class="card-body">
+
+          <span class="badge bg-danger mb-2">
+            Fashion
+          </span>
+
+          <h5 class="fw-bold">Mens Hoodie</h5>
+
+          <p class="text-muted">
+            Premium cotton stylish hoodie.
+          </p>
+
+          <div class="d-flex justify-content-between align-items-center">
+
+            <span class="price">₹1,999</span>
+
+            <button
+              class="btn btn-warning btn-sm"
+              (click)="addToCart({
+                name: 'Mens Hoodie',
+                price: 1999,
+                image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab'
+              })"
+            >
+              Buy Now
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card product-card h-100 shadow-sm">
+
+        <img
+          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+          class="card-img-top"
+        >
+
+        <div class="card-body">
+
+          <span class="badge bg-success mb-2">
+            Footwear
+          </span>
+
+          <h5 class="fw-bold">Running Shoes</h5>
+
+          <p class="text-muted">
+            Comfortable sports running shoes.
+          </p>
+
+          <div class="d-flex justify-content-between align-items-center">
+
+            <span class="price">₹3,499</span>
+
+            <button
+              class="btn btn-warning btn-sm"
+              (click)="addToCart({
+                name: 'Running Shoes',
+                price: 3499,
+                image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff'
+              })"
+            >
+              Buy Now
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card product-card h-100 shadow-sm">
+
+        <img
+          src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+          class="card-img-top"
+        >
+
+        <div class="card-body">
+
+          <span class="badge bg-dark mb-2">
+            Accessories
+          </span>
+
+          <h5 class="fw-bold">Luxury Watch</h5>
+
+          <p class="text-muted">
+            Elegant premium wrist watch.
+          </p>
+
+          <div class="d-flex justify-content-between align-items-center">
+
+            <span class="price">₹8,999</span>
+
+            <button
+              class="btn btn-warning btn-sm"
+              (click)="addToCart({
+                name: 'Luxury Watch',
+                price: 8999,
+                image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30'
+              })"
+            >
+              Buy Now
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card product-card h-100 shadow-sm">
+
+        <img
+          src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
+          class="card-img-top"
+        >
+
+        <div class="card-body">
+
+          <span class="badge bg-secondary mb-2">
+            Furniture
+          </span>
+
+          <h5 class="fw-bold">Modern Chair</h5>
+
+          <p class="text-muted">
+            Comfortable living room chair.
+          </p>
+
+          <div class="d-flex justify-content-between align-items-center">
+
+            <span class="price">₹5,499</span>
+
+            <button
+              class="btn btn-warning btn-sm"
+              (click)="addToCart({
+                name: 'Modern Chair',
+                price: 5499,
+                image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85'
+              })"
+            >
+              Buy Now
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card product-card h-100 shadow-sm">
+
+        <img
+          src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9"
+          class="card-img-top"
+        >
+
+        <div class="card-body">
+
+          <span class="badge bg-info mb-2">
+            Beauty
+          </span>
+
+          <h5 class="fw-bold">Makeup Kit</h5>
+
+          <p class="text-muted">
+            Professional beauty essentials set.
+          </p>
+
+          <div class="d-flex justify-content-between align-items-center">
+
+            <span class="price">₹2,299</span>
+
+            <button
+              class="btn btn-warning btn-sm"
+              (click)="addToCart({
+                name: 'Makeup Kit',
+                price: 2299,
+                image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9'
+              })"
+            >
+              Buy Now
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 7 -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card product-card h-100 shadow-sm">
+
+        <img
+          src="https://images.unsplash.com/photo-1542838132-92c53300491e"
+          class="card-img-top"
+        >
+
+        <div class="card-body">
+
+          <span class="badge bg-success mb-2">
+            Groceries
+          </span>
+
+          <h5 class="fw-bold">Fresh Vegetables</h5>
+
+          <p class="text-muted">
+            Farm fresh healthy vegetables.
+          </p>
+
+          <div class="d-flex justify-content-between align-items-center">
+
+            <span class="price">₹499</span>
+
+            <button
+              class="btn btn-warning btn-sm"
+              (click)="addToCart({
+                name: 'Fresh Vegetables',
+                price: 499,
+                image: 'https://images.unsplash.com/photo-1542838132-92c53300491e'
+              })"
+            >
+              Buy Now
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 8 -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card product-card h-100 shadow-sm">
+
+        <img
+          src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f"
+          class="card-img-top"
+        >
+
+        <div class="card-body">
+
+          <span class="badge bg-warning text-dark mb-2">
+            Books
+          </span>
+
+          <h5 class="fw-bold">Programming Book</h5>
+
+          <p class="text-muted">
+            Learn modern web development.
+          </p>
+
+          <div class="d-flex justify-content-between align-items-center">
+
+            <span class="price">₹899</span>
+
+            <button
+              class="btn btn-warning btn-sm"
+              (click)="addToCart({
+                name: 'Programming Book',
+                price: 899,
+                image: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f'
+              })"
+            >
+              Buy Now
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
